@@ -1,0 +1,184 @@
+//////css
+.bgcolor {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("https://images.unsplash.com/photo-1596445836561-991bcd39a86d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  position: relative;
+  opacity: 0.9;
+  font-family: "Times New Roman";
+}
+button.new {
+  width: 80px;
+  margin-right: 180px;
+}
+button.ddcard {
+  height: 35px;
+  width: 70px;
+}
+.btnBlue {
+  background-color: #0a53be;
+  color: white;
+}
+.btnBlue:hover {
+  background-color: #0a53be;
+  color: black;
+  transform: translateY(-7px);
+}
+.btnRed {
+  background-color: red;
+  color: white;
+}
+.btnRed:hover {
+  background-color: #be0a0a;
+  color: black;
+  transform: translateY(-7px);
+}
+.card-text {
+  margin-top: 5px;
+}
+p {
+  text-align: justify;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.filled {
+  color: yellow;
+}
+.notfilled {
+  color: #6e6a6a;
+}
+.defaultHeart {
+  position: relative;
+  /*display: inline-block;*/
+  color: gray;
+  font-size: 35px;
+}
+/*image*/
+* {
+  box-sizing: border-box;
+}
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.reposiveIframe {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 75%; /* 16:9 Aspect Ratio */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.property{
+  font-size: 18px;
+}
+.name{
+  color: orange;
+  font-size: 20px;
+}
+//////
+html
+<div class="container-fluid bgcolor">
+  <div class="row" *ngIf="movie !=null">
+    <div class="col-lg-2 mt-5">
+    </div>
+    <div class="col-lg-8 mt-5">
+      <div class="card mb-3 bgcolor">
+        <div class="row">
+          <div class="col-lg-8 mt-5">
+            <div class="row reposiveIframe ratio ratio-10x9">
+              <iframe class="e2e-iframe-trusted-src mx-2 responsive-iframe"
+                      [src]="url"></iframe>
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-2 col-sm-2 text-light">
+                <button
+                  class="mt-3 mx-2 btnBlue ddcard btn btn-outline-primary{{ ctrl.disabled ? 'danger' : 'success'}} me-2"
+                  (click)="toggle()">
+                  {{ ctrl.disabled ? "Đánh giá" : " Đánh giá" }}
+                </button>
+                <div class="mx-2 text-light mt-3"><b>Sao: {{ ctrl.value }}/5★</b></div>
+              </div>
+              <div class="col-lg-7 col-sm-5 text-light mt-2">
+                <ngb-rating [formControl]="ctrl" max="5">
+                  <ng-template let-fill="fill">
+                          <span class="defaultHeart" [class.filled]="fill === 100">
+                    <span [class.filled]="fill === 100" [class.notfilled]="fill === 0">★</span>
+                          </span>
+                  </ng-template>
+                </ngb-rating>
+                <div *ngIf="ctrl.valid" class="text-success mt-2">Cảm ơn đã đánh giá</div>
+                <div *ngIf="ctrl.invalid" class="text-danger mt-2">Vui lòng đánh giá</div>
+              </div>
+              <div class="col-lg-3 col-sm-3 mt-3 ">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-3 ">
+                    <button type="button" class=" ddcard btnRed btn btn-outline-danger new"
+                            (click)="transmissionData()" routerLink="/ticket/booking-ticket">Đặt vé
+                    </button>
+                  </div>
+                  <div class="col-lg-6 col-sm-3 ">
+                    <button type="button" class=" ddcard btnBlue btn btn-outline-primary">
+                      <a style="text-decoration:none; color: white"
+                         href="https://www.facebook.com/sharer/sharer.php?u=https://www.lottecinemavn.com/">Chia sẻ </a>
+                    </button>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-light">
+            <div class="card-body mt-3 mx-3 ">
+              <div class="row">
+                <div class="card-text text-center"><b class="property">{{movie.name}}</b></div>
+                <img class="zoom mt-2" width="250px" height="300px" src="{{movie.image}}">
+              </div>
+
+              <div class="row">
+                <div class="card-text "><span class="name">Thể loại: </span> <b class="property">{{movie.movieType}}</b>
+                </div>
+                <div class="card-text"><span class="name">Ngày chiếu: </span><b
+                  class="property">{{movie.startDay |date:"dd/MM/yyyy"}}</b></div>
+                <div class="card-text"><span class="name">Ngày kết thúc: </span><b
+                  class="property">{{movie.endDay |date:"dd/MM/yyyy"}}</b></div>
+                <div class="card-text"><span class="name">Thời lượng: </span><b class="property">{{movie.filmTime}}
+                  phút</b></div>
+                <div class="card-text"><span class="name">Diễn viên: </span><b class="property">{{movie.director}}</b>
+                </div>
+                <div class="card-text"><span class="name">Hãng: </span><b class="property">{{movie.filmStudio}}</b>
+                </div>
+                <div class="card-text"><span class="name">Nhà sản xuất: </span><b class="property">{{movie.actor}}</b>
+                </div>
+                <div class="card-text"><span class="name">Phiên bản: </span><b class="property">{{movie.version}}</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-light mb-5 ">
+        <div><p class="name">Nội dung</p></div>
+        <div><p class="property">{{movie.content}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
