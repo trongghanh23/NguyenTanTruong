@@ -1,0 +1,411 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Nguyễn thị hào",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "dateOfBirthday": "2020-12-12",
+      "gender": "female",
+      "idCard": "09876544567",
+      "phoneNumber": "09876545678",
+      "email": "hao@gmail.com.vn",
+      "address": "quảng bình"
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn thị thu",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "dateOfBirthday": "2019-11-20",
+      "gender": "female",
+      "idCard": "09876544567",
+      "phoneNumber": "09876545678",
+      "email": "thu@gmail.com.vn",
+      "address": "quảng bình"
+    },
+    {
+      "id": 3,
+      "name": "Nguyễn văn nam",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "dateOfBirthday": "2020-09-29",
+      "gender": "male",
+      "idCard": "09876544567",
+      "phoneNumber": "09876545678",
+      "email": "nam@gmail.com.vn",
+      "address": "quảng nam"
+    },
+    {
+      "id": 4,
+      "name": "Nguyễn thị thao",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      },
+      "dateOfBirthday": "2020-12-12",
+      "gender": "female",
+      "idCard": "09876544567",
+      "phoneNumber": "09876545678",
+      "email": "thao@gmail.com.vn",
+      "address": "quảng ngãi"
+    },
+    {
+      "id": 5,
+      "name": "Nguyễn thị bình",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "dateOfBirthday": "2020-10-12",
+      "gender": "female",
+      "idCard": "09876544567",
+      "phoneNumber": "09876545678",
+      "email": "bình@gmail.com.vn",
+      "address": "nghệ an"
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "facility": [
+    {
+      "id": 1,
+      "name": "Beach room",
+      "image": "https://pix10.agoda.net/hotelImages/463/463255/463255_17010415020050117322.jpg?ca=6&ce=1&s=1024x768",
+      "area": 200,
+      "cost": 400000,
+      "maxPeople": 5,
+      "rentType": {
+        "id": 1,
+        "name": "Hours"
+      },
+      "facilityType": {
+        "id": 1,
+        "name": "Villa"
+      },
+      "standardRoom": "Vip",
+      "description": "có hồ bơi",
+      "poolArea": 20,
+      "numberFloors": 3,
+      "facilityFree": "buffer"
+    },
+    {
+      "id": 2,
+      "name": "Beach room",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Bathroom-1047x563.jpg",
+      "area": 200,
+      "cost": 400000,
+      "maxPeople": 5,
+      "rentType": {
+        "id": 2,
+        "name": "Day"
+      },
+      "facilityType": {
+        "id": 2,
+        "name": "House"
+      },
+      "standardRoom": "Vip",
+      "description": "có xe máy ",
+      "poolArea": 20,
+      "numberFloors": 2,
+      "facilityFree": "buffer"
+    },
+    {
+      "id": 3,
+      "name": "Beach room",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Bathroom-1047x563.jpg",
+      "area": 200,
+      "cost": 400000,
+      "maxPeople": 5,
+      "rentType": {
+        "id": 3,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 3,
+        "name": "Room"
+      },
+      "standardRoom": "Vip",
+      "description": "có xe máy ",
+      "poolArea": 20,
+      "numberFloors": 2,
+      "facilityFree": "buffer"
+    },
+    {
+      "id": 4,
+      "name": "Beach room",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Bathroom-1047x563.jpg",
+      "area": 200,
+      "cost": 400000,
+      "maxPeople": 5,
+      "rentType": {
+        "id": 4,
+        "name": "Year"
+      },
+      "facilityType": {
+        "id": 1,
+        "name": "Villa"
+      },
+      "standardRoom": "Vip",
+      "description": "có xe máy ",
+      "poolArea": 20,
+      "numberFloors": 2,
+      "facilityFree": "buffer"
+    }
+  ],
+  "rentFacility": [
+    {
+      "id": 1,
+      "name": "Hours"
+    },
+    {
+      "id": 2,
+      "name": "Day"
+    },
+    {
+      "id": 3,
+      "name": "Month"
+    },
+    {
+      "id": 4,
+      "name": "Year"
+    }
+  ],
+  "facilityType": [
+    {
+      "id": 1,
+      "name": "Villa"
+    },
+    {
+      "id": 2,
+      "name": "House"
+    },
+    {
+      "id": 3,
+      "name": "Room"
+    }
+  ],
+  "contract": [
+    {
+      "id": 1,
+      "starDate": "2020-11-11",
+      "endDate": "2020-11-12",
+      "employee": "nguyễn văn nghĩa",
+      "customer": {
+        "id": 1,
+        "name": "Nguyễn thị hào",
+        "customerType": {
+          "id": 1,
+          "name": "Diamond"
+        },
+        "dateOfBirthday": "2020-12-12",
+        "gender": "female",
+        "idCard": "09876544567",
+        "phoneNumber": "09876545678",
+        "email": "hao@gmail.com.vn",
+        "address": "quảng bình"
+      },
+      "facility": {
+        "id": 1,
+        "name": "Beach room",
+        "image": "https://pix10.agoda.net/hotelImages/463/463255/463255_17010415020050117322.jpg?ca=6&ce=1&s=1024x768",
+        "area": 200,
+        "cost": 400000,
+        "maxPeople": 5,
+        "rentType": {
+          "id": 1,
+          "name": "Hours"
+        },
+        "facilityType": {
+          "id": 1,
+          "name": "Villa"
+        },
+        "standardRoom": "Vip",
+        "description": "có hồ bơi",
+        "poolArea": 20,
+        "numberFloors": 3,
+        "facilityFree": "buffer"
+      },
+      "deposit": 5000,
+      "total": 120000
+    },
+    {
+      "id": 2,
+      "starDate": "2021-09-11",
+      "endDate": "2021-09-12",
+      "employee": "nguyễn văn nam",
+      "customer": {
+        "id": 2,
+        "name": "Nguyễn thị thu",
+        "customerType": {
+          "id": 2,
+          "name": "Platinium"
+        },
+        "dateOfBirthday": "2019-11-20",
+        "gender": "female",
+        "idCard": "09876544567",
+        "phoneNumber": "09876545678",
+        "email": "thu@gmail.com.vn",
+        "address": "quảng bình"
+      },
+      "facility": {
+        "id": 2,
+        "name": "Beach room",
+        "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Bathroom-1047x563.jpg",
+        "area": 200,
+        "cost": 400000,
+        "maxPeople": 5,
+        "rentType": {
+          "id": 2,
+          "name": "Day"
+        },
+        "facilityType": {
+          "id": 2,
+          "name": "House"
+        },
+        "standardRoom": "Vip",
+        "description": "có xe máy ",
+        "poolArea": 20,
+        "numberFloors": 2,
+        "facilityFree": "buffer"
+      },
+      "deposit": 5000,
+      "total": 90000
+    },
+    {
+      "id": 3,
+      "starDate": "2020-07-10",
+      "endDate": "2020-07-12",
+      "employee": "nguyễn trong nhân",
+      "customer": {
+        "id": 3,
+        "name": "Nguyễn văn nam",
+        "customerType": {
+          "id": 1,
+          "name": "Diamond"
+        },
+        "dateOfBirthday": "2020-09-29",
+        "gender": "male",
+        "idCard": "09876544567",
+        "phoneNumber": "09876545678",
+        "email": "nam@gmail.com.vn",
+        "address": "quảng nam"
+      },
+      "facility": {
+        "id": 3,
+        "name": "Beach room",
+        "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Bathroom-1047x563.jpg",
+        "area": 200,
+        "cost": 400000,
+        "maxPeople": 5,
+        "rentType": {
+          "id": 3,
+          "name": "Month"
+        },
+        "facilityType": {
+          "id": 3,
+          "name": "Room"
+        },
+        "standardRoom": "Vip",
+        "description": "có xe máy ",
+        "poolArea": 20,
+        "numberFloors": 2,
+        "facilityFree": "buffer"
+      },
+      "deposit": 5000,
+      "total": 120000
+    },
+    {
+      "id": 4,
+      "starDate": "2021-04-19",
+      "endDate": "2021-04-20",
+      "employee": "nguyễn tấn đại",
+      "customer": {
+        "id": 4,
+        "name": "Nguyễn thị thao",
+        "customerType": {
+          "id": 4,
+          "name": "Silver"
+        },
+        "dateOfBirthday": "2020-12-12",
+        "gender": "female",
+        "idCard": "09876544567",
+        "phoneNumber": "09876545678",
+        "email": "thao@gmail.com.vn",
+        "address": "quảng ngãi"
+      },
+      "facility": "room",
+      "deposit": 5000,
+      "total": 100000
+    },
+    {
+      "id": 5,
+      "starDate": "2021-04-19",
+      "endDate": "2021-04-20",
+      "employee": "nguyễn tấn đại",
+      "customer": {
+        "id": 5,
+        "name": "Nguyễn thị bình",
+        "customerType": {
+          "id": 5,
+          "name": "Member"
+        },
+        "dateOfBirthday": "2020-10-12",
+        "gender": "female",
+        "idCard": "09876544567",
+        "phoneNumber": "09876545678",
+        "email": "bình@gmail.com.vn",
+        "address": "nghệ an"
+      },
+      "facility": {
+        "id": 4,
+        "name": "Beach room",
+        "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Bathroom-1047x563.jpg",
+        "area": 200,
+        "cost": 400000,
+        "maxPeople": 5,
+        "rentType": {
+          "id": 4,
+          "name": "Year"
+        },
+        "facilityType": {
+          "id": 1,
+          "name": "Villa"
+        },
+        "standardRoom": "Vip",
+        "description": "có xe máy ",
+        "poolArea": 20,
+        "numberFloors": 2,
+        "facilityFree": "buffer"
+      },
+      "deposit": 4000,
+      "total": 110000
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+<div class="row" style="width: 100%">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img src="https://pix10.agoda.net/hotelImages/463/463255/463255_17010415020050117322.jpg?ca=6&ce=1&s=1024x768"
+             class="d-block "
+             style="width: 100%;height:300px " alt="img1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.vietnamtourism.gov.vn/vn/images/Furama12.jpg" class="d-block "
+             style="width: 100%;height:300px " alt="img1">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://r.bstatic.com/xdata/images/hotel/max1024x768/92594160.jpg?k=994fefefaa04a68c435049e538f6a3e7a1ba518fd1049102f3b0d92e03ad098a&o="
+          class="d-block " style="width: 100%;height:300px " alt="img1">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Bathroom-1047x563.jpg"
+          class="d-block " style="width: 100%;height:300px " alt="img1">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+<div class="container-fluid px-5">
+<h2 style="text-align: center; margin-top: 10px">Facility</h2>
+  <form action="/customer" style="width: 40%;margin-left: 60%">
+    <div class="input-group mb-3">
+      <input
+        type="text-dark"
+        class="form-control"
+        aria-describedby="button-addon2"
+        name="keyword" placeholder="Name facility"
+      />
+      <button class="  btn btn-primary text-dark" type="submit" id="button-addon2"
+              data-mdb-ripple-color="dark">
+        Search
+      </button>
+    </div>
+
+  </form>
+
+<div class="row">
+  <div class="col-sm-4 mb-4" *ngFor="let item of facility">
+    <div class="card">
+      <img height="250px"
+           src="{{item.image}}"
+           class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name | uppercase}}</h5>
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <span class="card-text">Loại dịch vụ: {{item.facilityType.name | uppercase}}</span><br>
+            <span class="card-text">Diện tích: {{item.area}} m<sup>2</sup></span><br>
+            <span class="card-text">Chí phí thuê: {{item.cost | currency: "VND"}}</span>
+          </div>
+          <div class="col-sm-6">
+            <span class="card-text">Số người tối đa: {{item.maxPeople}}</span><br>
+            <span class="card-text">Kiểu thuê: {{item.rentType.name}}</span>
+          </div>
+        </div>
+        <a routerLink="edit/{{item.id}}" class="me-2">
+          <button class=" btn btn-success" >Edit</button>
+        </a>
+        <button class="btn btn-danger btn-outline-secondary text-light"
+                data-bs-toggle="modal"data-bs-target="#deleteCustomer"
+                (click)="getInfoFacilityDelete(item.name,item.id)">Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div>  <nav  aria-label="..." style="margin-left: 20px">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<div class="modal fade" id="deleteCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form action="/facility/delete" method="post">
+      <div class="modal-content" style="background-color: darksalmon">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notification </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body container-fluid">
+          You want to delete Customer: <span id="delete_modal">{{facilityNameDelete}}</span>
+          <input type="hidden" id="sendId" name="id">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-danger" data-bs-dismiss="modal"(click)="deleteFacility()">Delete</button>
+
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

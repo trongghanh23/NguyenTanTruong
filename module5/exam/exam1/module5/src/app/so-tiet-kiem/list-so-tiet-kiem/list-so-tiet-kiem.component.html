@@ -1,0 +1,116 @@
+
+<div class="text-center" style="margin-top: 10px"><h2>Danh Sách Sổ Tiết Kiệm</h2></div>
+
+<div class="container-fluid text-center ">
+
+
+  <div class="row" >
+
+    <div class="col-lg-9"></div>
+    <div class="col-lg-3">
+      <div action="/customer">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            aria-describedby="button-addon2"
+            name="keyword"placeholder=""
+          />
+          <button class="btn btn-primary text-white " type="submit" id="button-addon2"
+                  data-mdb-ripple-color="dark" placeholder="Name Customer">
+            Search
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <table class="table table-striped">
+
+      <tr class="bg-primary text-light">
+        <th>No.</th>
+        <th>Mã số sổ</th>
+        <th>Mã Khách Hàng</th>
+        <th>Tên Khách hàng</th>
+        <th>Ngày Mở Sổ</th>
+        <th>Thời Gian Bắt Đầu Gửi</th>
+        <th>Kì Hạn</th>
+        <th>Số Tiền Gửi</th>
+        <th>Lãi Suất</th>
+        <th>Ưu Đãi</th>
+        <th colspan="4">Action</th>
+
+      </tr>
+      <tr *ngFor="let list of listPaging; index as i" style="margin-top: 20px">
+        <td class="text-center">{{i + 1 + (curPage - 1) * numberRecord}}</td>
+        <td>{{list.id}}</td>
+        <td>{{list.idKhachHang.id}}</td>
+        <td>{{list.idKhachHang.name}}</td>
+        <td>{{list.ngayMoSo}}</td>
+        <td>{{list.thoiGianBatDau}}</td>
+        <td>{{list.kyHan}}</td>
+        <td>{{list.soTienGui}}</td>
+        <td>{{list.laiSuat}}</td>
+        <td>{{list.uuDai}}</td>
+
+        <td>
+          <button type="button" class="btn btn-outline-success"routerLink="/edit/sotietkiem/{{list.id}}">Edit</button>
+        </td>
+
+
+        <td>
+          <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal"
+                  data-bs-target="#deleteCustomer"(click)="getDelete(list.id)">Delete</button>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+  <nav aria-label="..." class="justify-content-center d-flex">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" (click)="previos()" *ngIf="curPage > 1">&laquo; previous</a>
+      </li>
+      <li class="page-item disabled" *ngIf="curPage <= 1">
+        <a class="page-link">&laquo;</a>
+      </li>
+
+      <li class="page-item"><a class="page-link disabled" href="" [text]="curPage + ' / ' + totalPage"></a>
+      </li>
+
+      <li class="page-item">
+        <a class="page-link" (click)="next()" *ngIf="curPage < totalPage">next &raquo;</a>
+      </li>
+      <li class="page-item disabled" *ngIf="curPage >= totalPage">
+        <a class="page-link">&raquo;</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="modal fade" id="deleteCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div >
+      <div class="modal-content" style="background-color: darksalmon">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notification </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body container-fluid">
+          Bạn có muốn xoá thông tin sổ tiết kiệm số: <span id="delete_modal">{{idDelete}}</span>
+          <input type="hidden" id="sendId" name="id">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-danger" data-bs-dismiss="modal"(click)="deleteCustomer()">Delete</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

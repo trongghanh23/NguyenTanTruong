@@ -1,0 +1,42 @@
+<h3 style="text-align: center">Form Login</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6" [formGroup]="formLogin">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+               formControlName="email">
+      </div>
+      <div class="mb-3 text-danger" *ngIf="formLogin.controls.email.hasError('required')
+      && formLogin.controls.email.dirty">
+        Please input email
+      </div>
+      <div class="mb-3 text-danger" *ngIf="formLogin.controls.email.hasError('email')
+      && formLogin.controls.email.dirty">
+        Please input format mai email
+      </div>
+
+      <div class="mb-3">
+        <label for="Password" class="form-label">Password </label>
+        <input type="text" class="form-control" id="Password" aria-describedby="Password"
+               formControlName="password">
+      </div>
+      <div class="mb-3 text-danger" *ngIf="formLogin.controls.password.hasError('required')
+      && formLogin.controls.password.dirty">
+        Please input Password
+      </div>
+      <div class="mb-3 text-danger" *ngIf="formLogin.controls.password.hasError('minLength')
+      && formLogin.controls.password.dirty">
+        Please input min 6 character
+      </div>
+
+      <button type="button" class="btn btn-primary" (click)="getValue()"
+              [disabled]="formLogin.invalid">Submit
+      </button>
+
+    </div>
+    <div class="col-lg-3"></div>
+
+  </div>
+</div>

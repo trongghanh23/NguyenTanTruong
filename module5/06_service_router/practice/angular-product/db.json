@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "IPhone 11",
+      "price": 1560000,
+      "description": "Like new",
+      "category": {
+        "id": 1,
+        "name": "iphone"
+      }
+    },
+    {
+      "id": 3,
+      "name": "IPhone X",
+      "price": 968000,
+      "description": "97%",
+      "category": {
+        "id": 1,
+        "name": "iphone"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "iphone"
+    },
+    {
+      "id": 2,
+      "name": "oppo"
+    },
+    {
+      "id": 3,
+      "name": "samsung"
+    }
+
+  ]
+}

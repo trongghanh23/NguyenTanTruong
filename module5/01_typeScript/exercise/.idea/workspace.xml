@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="760ebc50-e5ee-4076-bb52-d3f2d8209dd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/model/song.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/service/song.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/service/song.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/youtube-player/youtube-player.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/youtube-player/youtube-player.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/youtube-player/youtube-player.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/youtube-player/youtube-player.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/youtube-playlist/youtube-playlist.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/youtube-playlist/youtube-playlist.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/youtube-playlist/youtube-playlist.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/app/youtube-playlist/youtube-playlist.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-music/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/service/date-util.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/service/date-util.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/timelines/timelines.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/timelines/timelines.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/timelines/timelines.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/app/timelines/timelines.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_service_router/practice/angular-time/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/contract/list-contract/list-contract.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/contract/list-contract/list-contract.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/contract/list-contract/list-contract.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/contract/list-contract/list-contract.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/customer/add-customer/add-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/customer/add-customer/add-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/customer/edit-customer/edit-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/customer/edit-customer/edit-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/customer/list-customer/list-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/customer/list-customer/list-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/customer/list-customer/list-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/customer/list-customer/list-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/facility/list-facility/list-facility.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/facility/list-facility/list-facility.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/model/contract.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/model/contract.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/service/contract.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/service/contract.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/app/service/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular-castudy/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular-castudy/src/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2GqsT77fOw6QHS5OTG24dDWJuQy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="760ebc50-e5ee-4076-bb52-d3f2d8209dd1" name="Default Changelist" comment="" />
+      <created>1667127452226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667127452226</updated>
+      <workItem from="1667127453779" duration="41000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1667127492618">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1667127492618" />
+  </component>
+</project>

@@ -1,0 +1,112 @@
+<div class="text-center" style="margin-top: 10px"><h2>Customer Create</h2></div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-3">
+
+    </div>
+    <div class="col-6">
+
+      <form  [formGroup]="customerFormGroup" (ngSubmit)="createCustomer()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name"
+                 aria-describedby="firstName" formControlName="name">
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.name.hasError('required')
+      && customerFormGroup.controls.name.dirty">
+          Please input name
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.name.hasError('pattern')
+      && customerFormGroup.controls.name.dirty">
+          Please input format name KH-XXXX
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Birthday</label>
+          <input type="date" class="form-control" id="age"
+                 aria-describedby="dateOfBirthday" formControlName="dateOfBirthday">
+
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.dateOfBirthday.hasError('invalid18')
+      && customerFormGroup.controls.dateOfBirthday.dirty">
+          Please input >=18 | format DD/MM/YYYY
+        </div>
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender </label>
+          <select class="form-select" id="gender" aria-describedby="age" formControlName="gender">
+            <option>Female</option>
+            <option>Male</option>
+          </select>
+
+
+        </div>
+        <div class="mb-3">
+          <label for="idCard" class="form-label">IdCard</label>
+          <input type="text" class="form-control" id="idCard" aria-describedby="age"formControlName="idCard">
+
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.idCard.hasError('required')
+      && customerFormGroup.controls.idCard.dirty">
+          Please input id Card
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.idCard.hasError('pattern')
+      && customerFormGroup.controls.idCard.dirty">
+          Please input format id card XXXXXXXXX | XXXXXXXXXXXX
+        </div>
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Phone</label>
+          <input type="text" class="form-control" id="phoneNumber"formControlName="phoneNumber">
+
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.phoneNumber.hasError('required')
+      && customerFormGroup.controls.phoneNumber.dirty">
+          Please input phone number
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.phoneNumber.hasError('pattern')
+      && customerFormGroup.controls.phoneNumber.dirty">
+          Please input format phone number 090xxxxxxx | 091xxxxxxx | (84)+90xxxxxxx | (84)+91xxxxxxx.
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="text" class="form-control" id="email"
+                 aria-describedby="emailHelp"formControlName="email">
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.email.hasError('required')
+      && customerFormGroup.controls.email.dirty">
+          Please input email
+        </div>
+        <div class="mb-3 text-danger" *ngIf="customerFormGroup.controls.email.hasError('email')
+      && customerFormGroup.controls.email.dirty">
+          Please input format email
+        </div>
+
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <input type="text" class="form-control" id="address" aria-describedby="age" formControlName="address">
+
+        </div>
+
+        <div class="mb-3">
+          <label for="type" class="form-label">Chose customer type</label>
+          <select class="form-select" id="type" formControlName="customerType">
+            <option value="" disabled>Chose customer type</option>
+            <option *ngFor="let c of customerTypeList" [ngValue]="c">{{c.name}}</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="col-9">
+
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+          <div class="col-3">
+            <a class="text-white btn btn-primary" routerLink="/list/customer" style=" text-decoration: none">Back </a>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

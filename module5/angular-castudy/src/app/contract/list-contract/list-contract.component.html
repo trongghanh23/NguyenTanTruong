@@ -1,0 +1,110 @@
+
+<div class="text-center" style="margin-top: 10px"><h2>Contract List</h2></div>
+
+<div class="container-fluid text-center ">
+
+
+  <div class="row" style="margin-top: 10px">
+    <div class="col-lg-2">
+      <a href="../customer/create.html" class="btn btn-primary">Add Contract</a>
+
+    </div>
+    <div class="col-lg-7"></div>
+    <div class="col-lg-3">
+      <form action="/customer">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            aria-describedby="button-addon2"
+            name="keyword"
+          />
+          <button class="btn btn-primary text-white" type="submit" id="button-addon2"
+                  data-mdb-ripple-color="dark" placeholder="Name Customer">
+            Search
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <table class="table table-striped">
+
+      <tr class="bg-primary text-light">
+        <th>No.</th>
+        <th>Service</th>
+        <th>Customer</th>
+        <th>Start Date</th>
+        <th>Begin Date</th>
+        <th>Deposit</th>
+        <th>Total</th>
+        <th colspan="8">Service Detail</th>
+
+      </tr>
+      <tr *ngFor="let contracts of contract; index as i" style="margin-top: 20px">
+        <td>{{i + 1}}</td>
+        <td>{{contracts.facility.name}}</td>
+        <td>{{contracts.customer.name}}</td>
+        <td>{{contracts.starDate}}</td>
+        <td>{{contracts.endDate}}</td>
+        <td>{{contracts.deposit}}</td>
+        <td>{{contracts.total}}</td>
+
+
+
+        <td>
+          <button type="button" class="btn btn-outline-success">+</button>
+        </td>
+
+
+        <td>
+          <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">Service Detail</button>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+<div>  <nav  aria-label="..." style="margin-left: 20px">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form action="/customer/delete" method="post">
+      <div class="modal-content" style="background-color: darksalmon">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notification </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body container-fluid">
+          You want to delete Customer: <span id="delete_modal"></span>
+          <input type="hidden" id="sendId" name="id">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

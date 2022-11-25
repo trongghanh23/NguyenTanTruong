@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../bootstrap/js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#navbar").load("../navbar.html");
+            $("#footer").load("../footer.html");
+            $("#headers").load("../headers.html");
+        });
+    </script>
+</head>
+<body>
+<div id="headers"></div>
+<nav class="sticky-top "id="navbar"></nav>
+
+<div class="text-center" style="margin-top: 10px"><h2>Customer List</h2></div>
+
+<div class="container-fluid text-center ">
+
+
+    <div class="row" style="margin-top: 10px">
+        <div class="col-lg-2">
+            <a href="../contract/create.html" class="btn btn-primary">Add Contract</a>
+
+        </div>
+        <div class="col-lg-7"></div>
+        <div class="col-lg-3">
+            <form action="/contract">
+                <div class="input-group mb-3">
+                    <input
+                            type="text"
+                            class="form-control"
+                            aria-describedby="button-addon2"
+                            name="keyword"
+                    />
+                    <button class="btn btn-primary text-white" type="submit" id="button-addon2"
+                            data-mdb-ripple-color="dark">
+                        Search
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <table class="table table-striped">
+                <tr class="bg-primary text-light">
+                    <th>No.</th>
+                    <th>Service</th>
+                    <th>Customer</th>
+                    <th>Start Date</th>
+                    <th>Begin Date</th>
+                    <th>Deposit</th>
+                    <th>Total</th>
+                    <th colspan="8">Service Detail</th>
+
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Villa</td>
+                    <td>Nguyễn Thị Hào</td>
+                    <td>2020-12-12</td>
+                    <td>2020-13-12</td>
+                    <td>500000</td>
+                    <td>120000</td>
+
+
+                    <td>
+                        <button onclick="addGoContract()
+                        " type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" >
+                            +
+                        </button>
+                    </td>
+                    <td>
+
+
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+</div>
+<div class="modal fade" id="staticBackdropDelete" data-bs-backdrop="static"
+     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <form method="post" id="formDelete">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Attach service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table-bordered table">
+                        <thead class="btn-success text-center text-light">
+                        <tr>
+                            <td>No</td>
+                            <td>Name</td>
+                            <td>Cost</td>
+                            <td>Unit</td>
+                            <td>Status</td>
+                        </tr>
+                        </thead>
+                        <tbody id="showAttachFacilityId">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer id="footer"style="margin-top: 10px" ></footer>
+
+</body>
+</html>

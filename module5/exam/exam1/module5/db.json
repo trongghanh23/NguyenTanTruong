@@ -1,0 +1,74 @@
+{
+  "SoTietKiem": [
+    {
+      "id": 1,
+      "ngayMoSo": "01/01/2020",
+      "thoiGianBatDau": "01/01/2020",
+      "kyHan": "6 tháng",
+      "soTienGui": "20000000000",
+      "laiSuat": "8% năm",
+      "uuDai": "ao mưa",
+      "idKhachHang": {
+        "id": 1,
+        "name": "nguyễn văn a"
+      }
+    },
+    {
+      "id": 2,
+      "ngayMoSo": "01/01/2020",
+      "thoiGianBatDau": "01/01/2020",
+      "kyHan": "6 tháng",
+      "soTienGui": "20000000000",
+      "laiSuat": "8% năm",
+      "uuDai": "ao mưa",
+      "idKhachHang": {
+        "id": 2,
+        "name": "nguyễn văn b"
+      }
+    },
+    {
+      "id": 3,
+      "ngayMoSo": "01/01/2020",
+      "thoiGianBatDau": "01/01/2020",
+      "kyHan": "6 tháng",
+      "soTienGui": "20000000000",
+      "laiSuat": "8% năm",
+      "uuDai": "muwa",
+      "idKhachHang": {
+        "id": 3,
+        "name": "nguyễn văn c"
+      }
+    },
+    {
+      "id": 4,
+      "ngayMoSo": "01/01/2020",
+      "thoiGianBatDau": "01/01/2020",
+      "kyHan": "6 tháng",
+      "soTienGui": "20000000000",
+      "laiSuat": "8% năm",
+      "uuDai": "ao mưa",
+      "idKhachHang": {
+        "id": 4,
+        "name": "nguyễn văn d"
+      }
+    }
+  ],
+  "idKhachHang": [
+    {
+      "id": 1,
+      "name": "nguyễn văn a"
+    },
+    {
+      "id": 2,
+      "name": "nguyễn văn b"
+    },
+    {
+      "id": 3,
+      "name": "nguyễn văn c"
+    },
+    {
+      "id": 4,
+      "name": "nguyễn văn d"
+    }
+  ]
+}

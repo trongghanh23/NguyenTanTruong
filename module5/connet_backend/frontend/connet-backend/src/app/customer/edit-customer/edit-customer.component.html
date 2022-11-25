@@ -1,0 +1,81 @@
+<title>Customer | Edit</title>
+<app-header class="sticky-top"></app-header>
+<body>
+<div class="container col-12 mt-3">
+  <h3 class="text-center" style="color: white">Edit Customer</h3>
+</div>
+
+<div class="container border border-primary w-25 mb-5">
+  <form class="g-3" [formGroup]="formEdit" (ngSubmit)="saveEditing()" method="post">
+    <input formControlName="id" type="hidden"/>
+    <div class="col-12">
+      <label for="inputName" class="form-label">Name:</label>
+      <input formControlName="name" type="text" class="form-control" id="inputName"/>
+      <p style="color: red"></p>
+    </div>
+    <div class="col-12">
+      <label for="inputBirthday" class="form-label">Date of birth:</label>
+      <input formControlName="birthday" type="date" value="{{birthday | date: 'yyyy-MM-dd'}}" class="form-control" id="inputBirthday"/>
+    </div>
+
+    <div>
+      <label>Gender:</label> <br>
+      <div class="form-check form-check-inline">
+        <input formControlName="gender" class="form-check-input" value="1" type="radio" id="maleId"/>
+        <label class="form-check-label" for="maleId">
+          Male
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input formControlName="gender" class="form-check-input" value="0" type="radio" id="femaleId" checked/>
+        <label class="form-check-label" for="femaleId">
+          Female
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input formControlName="gender" class="form-check-input" value="2" type="radio" id="lgbtId"/>
+        <label class="form-check-label" for="lgbtId">
+          LGBT
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label for="inputIdNum" class="form-label">ID number:</label>
+      <input type="text" formControlName="idNum" class="form-control" id="inputIdNum" value="165248715"/>
+      <p style="color: red"></p>
+    </div>
+
+    <div class="col-12">
+      <label for="inputPhoneNum" class="form-label">Phone number:</label>
+      <input formControlName="phone" type="text" class="form-control" id="inputPhoneNum" value="0965241578"/>
+      <p style="color: red"></p>
+    </div>
+
+    <div class="col-12">
+      <label for="inputEmail" class="form-label">Email:</label>
+      <input formControlName="email" type="text" class="form-control" id="inputEmail" value="tatthanh@gmail.com"
+             placeholder="acb@gmail.com"/>
+      <p style="color: red"></p>
+    </div>
+
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address:</label>
+      <input formControlName="address" type="text" class="form-control" id="inputAddress" value="Quang Nam"
+             placeholder="1234 Main St"/>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Rank:</label>
+      <select formControlName="rank" class="form-select" [compareWith]="compareWithId">
+        <option *ngFor="let rank of ranks" [ngValue]="rank">{{rank.name}}</option>
+      </select>
+    </div>
+
+    <div class="col-12 mt-3 text-center mb-3">
+      <button type="submit" class="btn btn-primary">Save</button>
+      <a href="/customer/list" class="btn btn-secondary mx-3 text-white text-decoration-none">Customer list</a>
+    </div>
+  </form>
+</div>
+</body>
