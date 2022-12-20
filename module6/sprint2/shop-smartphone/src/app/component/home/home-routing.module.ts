@@ -18,14 +18,14 @@ const routes: Routes = [
     path: 'detail/:id', component: DetailsComponent
   },
   {
-    path: 'cart',
+    path: 'cart', canActivate: [AuthGuard],
+   data: {
+   roles: ['ROLE_CUSTOMER']
+ },
     component: CartComponent
   },
 ];
-// canActivate: [AuthGuard],
-//   data: {
-//   roles: ['ROLE_CUSTOMER']
-// },
+
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

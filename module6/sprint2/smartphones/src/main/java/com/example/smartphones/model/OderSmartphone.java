@@ -12,7 +12,7 @@ public class OderSmartphone {
     private Integer id;
     private String timeBookSmartphone;
     private boolean isDelete;
-    private String quantity;
+    private int quantity;
     private boolean status;
 
 
@@ -26,7 +26,7 @@ public class OderSmartphone {
     public OderSmartphone() {
     }
 
-    public OderSmartphone(Integer id, String timeBookSmartphone, boolean isDelete, String quantity, boolean status, Smartphone smartphone, Customer customer) {
+    public OderSmartphone(Integer id, String timeBookSmartphone, boolean isDelete, int quantity, boolean status, Smartphone smartphone, Customer customer) {
         this.id = id;
         this.timeBookSmartphone = timeBookSmartphone;
         this.isDelete = isDelete;
@@ -52,11 +52,11 @@ public class OderSmartphone {
         isDelete = delete;
     }
 
-    public String getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(String quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 

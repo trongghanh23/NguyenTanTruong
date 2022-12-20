@@ -25,11 +25,6 @@ export class SmartphoneListComponent implements OnInit {
 
   content: boolean;
 
-  username: string;
-  roles: string[] = [];
-  isCustomer = false;
-  isAdmin = false;
-
   // movieChoose: IMovieBookingDto;
   idUser: number;
   customer: ICustomer[];
@@ -58,8 +53,6 @@ export class SmartphoneListComponent implements OnInit {
 
   ngOnInit(): void {
     this.paginate(this.smartphoneNameSearch, this.pageSize);
-    this.username = '';
-    this.showUsername();
     window.scroll({
       top: 0,
       left: 0,
@@ -86,28 +79,6 @@ export class SmartphoneListComponent implements OnInit {
     this.pageSize += 4;
     this.paginate(this.smartphoneNameSearch, this.pageSize);
   }
-
-  showUsername() {
-    this.username = this.tokenService.getUser().username;
-    this.roles = this.tokenService.getUser().roles;
-    this.isCustomer = this.roles.indexOf('ROLE_CUSTOMER') !== -1;
-    this.isAdmin = this.roles.indexOf('ROLE_ADMIN') !== -1;
-  }
-  whenLogout() {
-    Swal.fire({
-      position: 'center',
-      icon: 'success',
-      title: ' Đăng xuất thành công !',
-      showConfirmButton: false,
-      timer: 1000
-    });
-    this.tokenService.logOut();
-    this.router.navigateByUrl('');
-    this.username = '';
-    this.isAdmin = false;
-  }
-
-
   // addToCart(laptopId: number): void {
   //   if (this.idUser == null) {
   //     this.router.navigateByUrl('/login');

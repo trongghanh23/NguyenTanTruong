@@ -3,8 +3,6 @@ package com.example.smartphones.dto;
 public interface SmartphoneDto {
     Integer getId();
 
-    Integer getIdOrder();
-
     String getInsurance();
 
     String getProducer();
@@ -48,5 +46,6 @@ public interface SmartphoneDto {
     String getTimeBookSmartphone();
 
     String getQuantity();
+    Integer getIdOrder();
 
 }

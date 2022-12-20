@@ -50,7 +50,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 authorizeRequests()
                 .antMatchers("/api/public/**",
                         "/api/customer/**",
-                        "/api/user/find/{username}",
                         "/api/smartphone/**",
                         "/oauth/google",
                         "/api/booking/**"

@@ -1,12 +1,13 @@
 import {Injectable} from '@angular/core';
 import {environment} from '../../environments/environment';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {SmartphoneType} from '../model/smartphone-type';
 import {SearchResult} from '../model/search-result';
 import {Smartphone} from '../model/smartphone';
 import {SmartphoneDTo} from '../dto/smartphone-dto';
 import {ICart} from '../model/i-cart';
+import {TokenStorageService} from './token-storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -15,10 +16,16 @@ export class SmartphoneService {
   URL_API = `${environment.api_url}`;
   httpOptions: any;
 
-  constructor(private httpClient: HttpClient) {
-
+  constructor(private httpClient: HttpClient, private tokenService: TokenStorageService) {
+    this.httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + this.tokenService.getToken()
+      }),
+      'Access-Control-Allow-Origin': 'http://localhost:4200',
+      'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
+    };
   }
-
   getAllSmartphoneType(): Observable<SmartphoneType[]> {
     console.log(this.URL_API + 'smartphone/smartphoneType');
     return this.httpClient.get<SmartphoneType[]>(this.URL_API + '/smartphone/smartphoneType');
@@ -33,16 +40,24 @@ export class SmartphoneService {
     return this.httpClient.get<SmartphoneDTo>(this.URL_API + '/smartphone/detail/' + id);
   }
 
-  listCart(id: number): Observable<ICart[]> {
-    return this.httpClient.get<ICart[]>(this.URL_API + '/smartphone/booking/list/cart/' + id);
+  listCart(id: number): Observable<SmartphoneDTo[]> {
+    return this.httpClient.get<SmartphoneDTo[]>(this.URL_API + '/booking/list/cart/' + id);
   }
   findByUsername(): Observable<any> {
     return this.httpClient.get<any>(this.URL_API + '/smartphone/get/customer/', this.httpOptions);
   }
   cartCount(id: number): Observable<any> {
-    return this.httpClient.get<any>(this.URL_API + '/smartphone/booking/cart/count/' + id);
+    return this.httpClient.get<any>(this.URL_API + '/booking/cart/count/' + id);
   }
-  addToCart(quantity: number, customerId: number, laptopId: number): Observable<void> {
-    return this.httpClient.get<void>(this.URL_API + 'smartphone/booking/add/cart/' + quantity + '&' + customerId + '&' + laptopId);
+  addToCart(quantity: number, customerId: number, smartphoneId: number): Observable<void> {
+    return this.httpClient.get<void>(this.URL_API + '/booking/add/cart/' + quantity + '&' + customerId + '&' + smartphoneId);
+  }
+  ascQuantity(id: number): Observable<void> {
+    console.log(this.URL_API + '/booking/asc/quantity/' + id);
+    return this.httpClient.get<void>(this.URL_API + '/booking/asc/quantity/' + id);
+  }
+
+  descQuantity(id: number): Observable<void> {
+    return this.httpClient.get<void>(this.URL_API + '/booking/desc/quantity/' + id);
   }
 }

@@ -20,7 +20,7 @@ export class UserService {
     this.httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + this.tokenService.getToken()
+        Authorization: 'Bearer ' + this.tokenService.getToken()
       }),
       'Access-Control-Allow-Origin': 'http://localhost:4200',
       'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
@@ -29,13 +29,5 @@ export class UserService {
 
   editUser(user: UserDto): Observable<any> {
     return this.http.patch<any>(environment.api_url + 'user/edit', user, this.httpOptions);
-  }
-
-  getAll(): Observable<IUser[]> {
-    return this.http.get<IUser[]>(this.baseURL);
-  }
-
-  showUsername(): Observable<any> {
-    return this.http.get<any>(this.FIND_USERNAME_URL + 'findUsername', this.httpOptions);
   }
 }

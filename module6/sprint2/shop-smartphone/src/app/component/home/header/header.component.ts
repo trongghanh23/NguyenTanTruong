@@ -4,6 +4,7 @@ import {HomeService} from '../../../service/home.service';
 import {TokenStorageService} from '../../../service/token-storage.service';
 import {SmartphoneService} from '../../../service/smartphone.service';
 import Swal from 'sweetalert2';
+import {SmartphoneDTo} from '../../../dto/smartphone-dto';
 
 @Component({
   selector: 'app-header',
@@ -18,11 +19,17 @@ export class HeaderComponent implements OnInit {
   isAdmin = false;
   isEmployee = false;
   isLoggedIn = localStorage.getItem('auth-user');
+  smartphoneChoose: SmartphoneDTo;
 
   constructor(private router: Router,
               private homeService: HomeService,
               private tokenService: TokenStorageService,
               private smartphoneService: SmartphoneService) { }
+  // transmissionData() {
+  //   this.smartphoneChoose = {id: 0, name: ''};
+  //   this.smartphoneChoose.changeData(this.movieChoose);
+  // }
+
   ngOnInit(): void {
     this.username = '';
     this.showUsername();
@@ -50,6 +57,14 @@ export class HeaderComponent implements OnInit {
     this.router.navigateByUrl('');
     this.username = '';
     this.isAdmin = false;
+  }
+  clickCart() {
+    if (this.username == null) {
+      this.router.navigateByUrl('/login');
+    } else {
+      this.router.navigateByUrl('/cart');
+    }
+
   }
 
 }

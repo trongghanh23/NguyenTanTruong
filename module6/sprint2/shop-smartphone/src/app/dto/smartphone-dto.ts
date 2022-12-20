@@ -3,6 +3,9 @@ import {Specifications} from '../model/specifications';
 
 export interface SmartphoneDTo {
   id?: number;
+  idOrder?: number;
+  quantity?: number;
+  timeBookSmartphone?: string;
   insurance?: string;
   producer?: string;
   price?: string;
