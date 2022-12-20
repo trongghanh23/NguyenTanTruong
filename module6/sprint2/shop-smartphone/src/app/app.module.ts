@@ -6,26 +6,29 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './component/decentralization/login/login.component';
 import { HeaderComponent } from './component/home/header/header.component';
 import {FooterComponent} from './component/home/footer/footer.component';
-import { HomeComponent } from './component/home/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DetailsComponent } from './component/home/details/details.component';
-import { CartComponent } from './component/home/cart/cart.component';
+import {HomeModule} from './component/home/home.module';
+import {DecentralizationModule} from './component/decentralization/decentralization.module';
+
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    HeaderComponent,
     FooterComponent,
-    HomeComponent,
-    DetailsComponent,
-    CartComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    HttpClientModule,
+    FormsModule,
+    NgbModule,
+    HomeModule,
+    DecentralizationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,15 +1,15 @@
-create database if not exists project_shop_smartphone;
-use project_shop_smartphone;
+create database if not exists project_smartphone;
+use project_smartphone;
 
 create table if not exists user(
 	username varchar(30) primary key,
-    password varchar(200),
+    `password` varchar(200),
     is_delete bit default 0
 );
 
 create table  if not exists role(
 	id int primary key auto_increment,
-    name varchar(30),
+    `name` varchar(30),
     is_delete bit default 0
 );
 
@@ -25,13 +25,13 @@ create table if not exists user_role(
 
 create table if not exists customer_type(
 	id int primary key auto_increment,
-    name varchar(30),
+    `name` varchar(30),
     is_delete bit default 0
 );
 
 create table if not exists customer(
 	id int primary key auto_increment,
-	name varchar(30),
+	`name` varchar(30),
 	is_delete bit default 0,
 	day_of_birth varchar(30),
 	gender int,
@@ -46,7 +46,7 @@ create table if not exists customer(
 );
 create table if not exists employee(
 	id int primary key auto_increment,
-	name varchar(50),
+	`name` varchar(50),
 	gender int,
 	email varchar(100),
 	address varchar(200),
@@ -59,51 +59,6 @@ create table if not exists employee(
 	foreign key (username) references user(username)
 );
 
-create table if not exists screen(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-)
-;create table if not exists operating_system(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-);
-create table if not exists rear_camera(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-);
-create table if not exists front_camera(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-);
-create table if not exists processor_chip(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-);
-create table if not exists ram(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-);
-create table if not exists `storage`(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-);
-create table if not exists bettery(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-);
-create table if not exists charge(
-id int primary key auto_increment,
-is_delete bit default 0,
-`name` varchar(45)
-);
 create table if not exists type_smartphone(
 id int primary key auto_increment,
 is_delete bit default 0,
@@ -112,26 +67,15 @@ is_delete bit default 0,
 create table if not exists specifications(
 id int primary key auto_increment,
 is_delete bit default 0,
-screen_id int,
-operating_system_id int,
-rear_camera_id int,
-front_camera_id int,
-processor_chip_id int,
-ram_id  int,
-storage_id int,
-bettery_id int,
-charge_id int,
-utility_description text,
-foreign key(screen_id) references screen(id),
-foreign key(operating_system_id) references operating_system(id),
-foreign key(rear_camera_id) references rear_camera(id),
-foreign key(front_camera_id) references front_camera(id),
-foreign key(processor_chip_id) references processor_chip(id),
-foreign key(ram_id) references ram(id),
-foreign key(storage_id) references `storage`(id),
-foreign key(bettery_id) references bettery(id),
-foreign key(charge_id) references charge(id)
-
+screen varchar(50),
+operating_system varchar(50),
+rear_camera varchar(50),
+front_camera varchar(50),
+processor_chip varchar(50),
+ram  varchar(50),
+`storage` varchar(50),
+bettery varchar(50),
+charge varchar(50)
 );
 
 create table if not exists type_smartphone(
@@ -139,14 +83,19 @@ id int primary key auto_increment,
 is_delete bit default 0,
 `name` varchar(45)
 );
+create table if not exists image(
+id int primary key auto_increment,
+is_delete bit default 0,
+`name` text,
+smartphone_id int,
+foreign key(smartphone_id) references smartphone(id) );
 
 create table if not exists smartphone(
 id int primary key auto_increment,
 is_delete bit default 0,
-trailer text,
 insurance varchar(100),
+producer varchar(50),
 price int,
-image text,
 Specifications_id int,
 type_smartphone_id int,
 customer_id int,

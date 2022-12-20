@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0102ccd-7896-47c8-83da-f8220f677c83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Cach2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/customer/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/decentralization/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/decentralization/SocialResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/decentralization/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/decentralization/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/employee/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/smartphone/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/smartphone/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/smartphone/SmartphoneType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iphones/src/main/java/com/codegym/iphones/model/smartphone/Specifications.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/controller/SmartphoneRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/dto/SmartphoneDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/customer/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/decentralization/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/decentralization/SocialResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/decentralization/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/decentralization/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/employee/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/smartphone/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/smartphone/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/smartphone/SmartphoneType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/model/smartphone/Specifications.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/repository/ImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/repository/SmartphoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/repository/SmartphoneTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/repository/SpecificationsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/service/IImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/service/ISmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/service/ISmartphoneTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/service/ISpecificationsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/service/impl/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/service/impl/SmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/service/impl/SmartphoneTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smartphones/src/main/java/com/example/smartphones/service/impl/SpecificationsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project_c0522g1/cinema-management-v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../project_c0522g1/cinema-management-v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/cart/cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/details/details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/details/details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/details/details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/details/details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/home-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/home-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/home.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/app/component/home/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop-smartphone/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../shop-smartphone/src/environments/environment.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ivio6CchoQLTYjTX1VKEY0RVbn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codegym/module6/sprint2/shop-smartphone"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Cach2">
+    <configuration name="Cach2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cach2" />
+      <module name="demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Cach2" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0102ccd-7896-47c8-83da-f8220f677c83" name="Changes" comment="" />
+      <created>1671068633316</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671068633316</updated>
+      <workItem from="1671068635021" duration="9683000" />
+      <workItem from="1671146830787" duration="5864000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
