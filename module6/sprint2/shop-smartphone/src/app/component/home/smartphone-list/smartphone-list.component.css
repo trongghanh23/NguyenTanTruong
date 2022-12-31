@@ -1,0 +1,119 @@
+
+.column {
+  margin: 15px 15px 0;
+  padding: 0;
+}
+.column:last-child {
+  padding-bottom: 60px;
+}
+.column::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.column div {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin: 0 0 0 25px;
+  padding: 0;
+}
+.column div:first-child {
+  margin-left: 0;
+}
+
+#names {
+  width: 200px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+#names:hover+span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+.hover06 #names img {
+  -webkit-transform: rotate(15deg) scale(1.4);
+  transform: rotate(15deg) scale(1.4);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover06 #names:hover img {
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+/*///////////////////*/
+
+
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100%;
+}
+body{
+  background-image: radial-gradient(mintcream 0%, lightgray 100%);
+}
+
+.abc{
+  margin: 4% auto;
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+}
+#xyz{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 20s infinite linear;
+}
+#xyz:hover{
+  animation-play-state: paused;
+}
+#xyz figure{
+  display: block;
+  position: absolute;
+  width: 186px;
+  height: 116px;
+  left: 10px;
+  top: 10px;
+  overflow: hidden;
+
+}
+#xyz figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#xyz figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#xyz figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#xyz figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#xyz figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#xyz figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#xyz figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#xyz figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#xyz figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+img{
+  /*-webkit-filter: grayscale(1);*/
+  cursor: pointer;
+  transition: all .5s ease;
+  width: 100px;
+  height: 100px;
+}
+img:hover{
+  transform: scale(1.3,1.3);
+}
+
+@keyframes rotation{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}

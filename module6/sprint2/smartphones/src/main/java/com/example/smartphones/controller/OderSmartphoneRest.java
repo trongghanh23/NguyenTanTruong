@@ -56,4 +56,16 @@ public class OderSmartphoneRest {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @GetMapping("/delete/cart/{id}")
+    public ResponseEntity<OderSmartphone> deleteCart(@PathVariable("id") Integer id) {
+        iOderSmartphoneService.deleteCart(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @GetMapping("/pay/smartphone/{id}")
+    public ResponseEntity<OderSmartphone> payBookingLaptop(@PathVariable("id") Integer id) {
+        iOderSmartphoneService.payBookingSmartphone(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 }

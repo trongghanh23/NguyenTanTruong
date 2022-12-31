@@ -1,8 +1,11 @@
 package com.example.smartphones.repository;
 
 import com.example.smartphones.dto.IBookingDto;
+import com.example.smartphones.dto.IHistoryDto;
 import com.example.smartphones.dto.SmartphoneDto;
 import com.example.smartphones.model.OderSmartphone;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -27,8 +30,6 @@ public interface OderRepository extends JpaRepository<OderSmartphone,Integer> {
             "and oder_smartphone.quantity > 0  " +
             "and oder_smartphone.customer_id = :id",nativeQuery = true)
     List<SmartphoneDto> findCartByUser(@Param("id") Integer id);
-
-
     @Query(value = "select count(id) as cartCount " +
             "from oder_smartphone " +
             "where oder_smartphone.customer_id= :id " +
@@ -55,9 +56,21 @@ public interface OderRepository extends JpaRepository<OderSmartphone,Integer> {
     void addSmartphone(@Param("quantity") Integer quantity,
                    @Param("customerId") Integer customerId,
                    @Param("smartphoneId") Integer smartphoneId);
+    @Modifying
     @Query(value = "update oder_smartphone set quantity = :quantity where status = 0 and customer_id = :customerId " +
             "and smartphone_id = :smartphoneId", nativeQuery = true)
     void setQuantitySmartphone(@Param("quantity") Integer quantity,
                            @Param("customerId") Integer customerId,
                            @Param("smartphoneId") Integer smartphoneId);
+
+    @Modifying
+    @Query(value = "update oder_smartphone set is_delete = 1 where id = :id ", nativeQuery = true)
+    void deleteCart(@Param("id") Integer id);
+
+    @Modifying
+    @Query(value = "update oder_smartphone set oder_smartphone.status = 1 where oder_smartphone.customer_id = :id " +
+            "and is_delete = 0 and oder_smartphone.status = 0 ", nativeQuery = true)
+    void payBookingSmartphone(@Param("id") Integer id);
+
+
 }

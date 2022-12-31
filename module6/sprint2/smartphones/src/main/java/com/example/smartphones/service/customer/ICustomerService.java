@@ -3,6 +3,7 @@ package com.example.smartphones.service.customer;
 import com.example.smartphones.dto.ICustomerDto;
 import com.example.smartphones.model.customer.Customer;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface ICustomerService {
@@ -13,4 +14,6 @@ public interface ICustomerService {
 //    Optional<ICustomerDto> findCustomerByUsername(String username);
 
     Customer findCustomerByUsername( String username);
+
+    List<Customer>findAll();
 }

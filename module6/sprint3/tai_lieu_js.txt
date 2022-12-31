@@ -1,0 +1,21 @@
+lệnh tạo npx create-react-app
+npm start
+sử dụng jsx để làm template thay thế javascript
+có thể sd hoặc không
+ưu điểm:
+Trang web chạy nhanh hơn bởi vì quá trình optimise code được diển ra trong khi code được biên dịch qua javascript
+
+Code theo kiểu type-safe nên hầu hết các lỗi có thể được phát hiện trong giai đoạn compile code
+
+Giúp chúng ta viết code nhanh hơn vì mình viết theo template nếu chúng ta có kiến thức về HTML.
+
+phép tính {}
+if else dùng ba ngôi: dv <h1>{i == 1 ? 'True!' : 'False'}</h1>
+nhiều thẻ phải dùng div bao
+nhúng css từ bên ngoài  classNam=""
+
+-compoment:
++stateless: không khởi tạo hoặc thêm giá trị các component. class App extend React.Component
+hiển thị dùng main.js gọi reactDom.render()
++stateful: khởi tạo hoặc thêm giá trị các component.
+sử dung this.pros truyền cha xuống con

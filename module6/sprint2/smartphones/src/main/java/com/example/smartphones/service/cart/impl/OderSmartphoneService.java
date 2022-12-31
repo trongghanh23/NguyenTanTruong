@@ -47,4 +47,15 @@ public class OderSmartphoneService implements IOderSmartphoneService {
             oderRepository.addSmartphone(quantity, customerId, smartphoneId);
         }
     }
+
+    @Override
+    public void deleteCart(Integer id) {
+        oderRepository.deleteCart(id);
+    }
+
+    @Override
+    public void payBookingSmartphone(Integer id) {
+        oderRepository.payBookingSmartphone(id);
+    }
+
 }

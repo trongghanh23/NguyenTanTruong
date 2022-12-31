@@ -17,6 +17,7 @@ public class Customer {
     private Integer gender;
     private String idCard;
     private String email;
+
     private String address;
     private String phoneNumber;
 

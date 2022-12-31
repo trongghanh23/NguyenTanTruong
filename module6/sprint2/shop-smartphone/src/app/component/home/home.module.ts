@@ -5,15 +5,15 @@ import {DetailsComponent} from './details/details.component';
 import {CartComponent} from './cart/cart.component';
 import {SmartphoneListComponent} from './smartphone-list/smartphone-list.component';
 import {FormsModule} from '@angular/forms';
-
-
+import {HistoryComponent} from './history/history.component';
+import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     DetailsComponent,
     SmartphoneListComponent,
-    CartComponent
-
+    CartComponent,
+    HistoryComponent
   ],
     exports: [
     ],
@@ -21,6 +21,7 @@ import {FormsModule} from '@angular/forms';
     CommonModule,
     HomeRoutingModule,
     FormsModule,
+    NgbPaginationModule,
   ]
 
 })

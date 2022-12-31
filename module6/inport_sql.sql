@@ -1,10 +1,19 @@
  use project_smartphone;
 insert into smartphone_type(id,is_delete,`name`,image) value
-(1,0,"Iphone 8","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/%E1%BA%A3nh%20iphone7%2F1567872433_679_iphone_11%20-%20Copy%20-%20Copy.jpg?alt=media&token=b3051e74-fd03-4ca0-bce0-5cedda6fdf77"),
-(2,0,"Iphone 11","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/%E1%BA%A3nh%20iphone7%2Fiphone%20-%20Copy%20-%20Copy.jpg?alt=media&token=a194a22d-1b80-44e6-b508-02554e152e8c"),
-(3,0,"Iphone 12","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/%E1%BA%A3nh%20iphone7%2Fiphone-.jpg?alt=media&token=0dbee7c0-9e39-4b89-8d9a-b1be33f67f9f"),
-(4,0,"Iphone 13","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/%E1%BA%A3nh%20iphone7%2Fiphone7%20-%20Copy.jpg?alt=media&token=fc2d2cd8-d67d-4fab-a3dd-019601c12b20"),
-(5,0,"Iphone 14","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/%E1%BA%A3nh%20iphone7%2F1567872433_679_iphone_11%20-%20Copy%20-%20Copy.jpg?alt=media&token=b3051e74-fd03-4ca0-bce0-5cedda6fdf77");
+(1,0,"Iphone 8","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-1)%20-%20Copy.jpg?alt=media&token=9eb8c51d-b587-438b-af9f-2fe6133a3597"),
+(2,0,"Iphone 11","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-13-%20-%20Copy.jpg?alt=media&token=a78b0198-e60a-4aaf-b85b-e6b3c7911559"),
+(3,0,"Iphone 12","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-13-512gb-%20-%20Copy.jpg?alt=media&token=85eac131-1d10-4512-9c19-c3bfbed08b1a"),
+(4,0,"Iphone 13","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-13-mini-22%20-%20Copy.jpg?alt=media&token=01736143-d666-450f-a484-596ee64fcd46"),
+(5,0,"Iphone 14","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-1)%20-%20Copy.jpg?alt=media&token=9eb8c51d-b587-438b-af9f-2fe6133a3597"),
+(6,0,"Iphone 11","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-13-mini-red-1-600x600.jpg?alt=media&token=06d1abe6-d366-41ec-9369-da5254734ed9"),
+(7,0,"Iphone 11","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-14%20-%20Copy.jpg?alt=media&token=0c939ee6-84ab-4fa3-911e-81afb48e75f5"),
+(8,0,"Iphone 12","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-14%20-%20Copy.jpg?alt=media&token=0c939ee6-84ab-4fa3-911e-81afb48e75f5"),
+(9,0,"Iphone 12","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-14-plu.jpg?alt=media&token=ae4711ea-f31b-41d6-83fb-9395e0b939d0"),
+(10,0,"Iphone 13","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-14-plus-512gb-.jpg?alt=media&token=6ad1d369-124d-44e4-956f-79d92163313a"),
+(11,0,"Iphone 8","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone-se-2022-.jpg?alt=media&token=578c6399-0360-4eec-903e-1643f2cb67f6"),
+(12,0,"Iphone 14","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone3%20-%20Copy.jpg?alt=media&token=fd2f3c26-45e1-4d37-8341-a95acb184c00"),
+(13,0,"Iphone 14","https://firebasestorage.googleapis.com/v0/b/project-phone-bff73.appspot.com/o/iphone%2Fiphone3.jpg?alt=media&token=2592aa99-c034-4461-8b25-a933f41dbb42");
+
 insert into specifications(id,is_delete,bettery,charge,front_camera,`name`,operating_system,processor_chip,ram,rear_camera,screen,`storage`)value
 (1,0,"3300mAh","fast charging","7MP","iphone8","iOS 11","Apple A11 Bionic","2 GB","12MP" ,"4.7 inch ","32GB"),
 (2,0,"3500mAh","fast charging","10MP","iphone11","iOS 11","Apple A11 Bionic","4 GB","15MP", "4.8 inch ","64GB"),

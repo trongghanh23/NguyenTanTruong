@@ -16,4 +16,8 @@ public interface IOderSmartphoneService {
     Optional<IBookingDto> getCartCount(Integer id);
 
     void addSmartphone(Integer quantity, Integer customerId,Integer smartphoneId);
+
+    void deleteCart(Integer id);
+
+    void payBookingSmartphone( Integer id);
 }
